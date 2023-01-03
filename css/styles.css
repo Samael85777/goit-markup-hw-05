@@ -102,12 +102,22 @@ img {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 24px;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .link-navigation:hover,
 .link-navigation:focus {
   color: var(--color-action);
+}
+
+.link-navigation:active::after {
+  content: '';
+  width: 66px;
+  height: 4px;
+  background: var(--color-button-action);
+  justify-content: center;
+  align-items: center;
 }
 
 /* contacts */
