@@ -519,12 +519,8 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.5);
 }
 
-.portfolio-box-img:hover::after {
-  transform: translateY(100%);
-  transition-property: background-color;
-  opacity: 1;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.portfolio-box-img {
+ 
 }
 
 .box-img {
@@ -546,7 +542,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .portfolio-box-card {
