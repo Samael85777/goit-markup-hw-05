@@ -518,6 +518,50 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.5);
 }
 
+.portfolio-box-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-box-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color-action);
+  opacity: 1;
+  /* transform: translateY(100%);
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.portfolio-box {
+  outline: red solid 1px;
+  width: 296px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-background-brand);
+  /* color: #050505; */
+  display: block;
+  opacity: 0;
+  transform: translateY(100%);
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-box-card {
   padding: 32px 16px;
   border-right: 0.5px solid var(--color-background-brand);
