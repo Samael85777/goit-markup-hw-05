@@ -7,6 +7,7 @@
   --color-background-brand: #f4f4fd;
   --color-button-action: #404bbf;
   --color-background-button: #e7e9fc;
+  --footer-background-link: rgb(255, 255, 255, 0.1);
 }
 
 body {
@@ -104,6 +105,10 @@ img {
   padding-bottom: 24px;
   display: flex;
   flex-direction: column;
+  transition-property: var(--color-action);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .link-navigation:hover,
@@ -111,13 +116,24 @@ img {
   color: var(--color-action);
 }
 
-.link-navigation:active::after {
-  content: '';
-  width: auto;
+.link-navigation-line-studio::after {
+  content: "";
+  width: 100%;
   height: 4px;
   background: var(--color-button-action);
-  justify-content: center;
-  align-items: center;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+}
+
+.link-navigation-line-portfolio::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: var(--color-button-action);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
 }
 
 /* contacts */
@@ -140,6 +156,9 @@ img {
   gap: 10px;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition-property: var(--color-action);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contacts:hover,
@@ -195,6 +214,9 @@ img {
   display: block;
   margin: 0 auto;
   border: none;
+  transition-property: var(--color-button-action);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-section-hero:hover,
@@ -358,6 +380,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: var(--color-action);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -404,6 +429,9 @@ img {
   justify-content: center;
   align-items: center;
   fill: #8e8f99;
+  transition-property: var(--color-action);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-link:hover,
@@ -450,6 +478,9 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 8px 16px;
+  transition-property: var(--color-action);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-action:hover,
@@ -478,6 +509,9 @@ img {
 .portfolio-img {
   text-decoration: none;
   display: block;
+  transition-property: var(--color-background-brand);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-img:hover {
@@ -581,6 +615,9 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  transition-property: var(--footer-background-link);
+  transition-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-link:hover,
