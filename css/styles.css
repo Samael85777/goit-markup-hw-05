@@ -132,6 +132,10 @@ img {
   bottom: 0;
 }
 
+.link.current {
+  color: var(--color-action);
+}
+
 /* contacts */
 
 .navigation-contacts-list {
