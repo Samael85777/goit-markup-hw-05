@@ -103,10 +103,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
-  flex-direction: column;
-  transition-property: color;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
@@ -155,9 +152,8 @@ img {
   gap: 10px;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition-property: fill, color;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contacts:hover,
@@ -213,9 +209,9 @@ img {
   display: block;
   margin: 0 auto;
   border: none;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-section-hero:hover,
@@ -379,9 +375,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -428,9 +422,8 @@ img {
   justify-content: center;
   align-items: center;
   fill: #8e8f99;
-  transition-property: border-color, fill;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-link:hover,
@@ -477,9 +470,10 @@ img {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 8px 16px;
-  transition-property: box-shadow, color, background-color, border-colo;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-action:hover,
@@ -508,9 +502,7 @@ img {
 .portfolio-img {
   text-decoration: none;
   display: block;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-img:hover {
@@ -524,15 +516,9 @@ img {
 
 .box-title {
   background: var(--color-action);
-  background-blend-mode: soft-light;
-  mix-blend-mode: normal;
-  transform: translate(0, 100%);
+  transform: translate(0, 101%);
   transition: transform 250ms linear;
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-bottom: 164px;
-  padding-left: 32px;
-  display: block;
+  padding: 40px 32px 164px 32px;
   width: 100%;
   height: 100%;
   font-weight: 400;
@@ -646,9 +632,7 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-link:hover,
@@ -666,9 +650,8 @@ img {
   width: 100%;
   height: 100%;
   z-index: 100;
-  transition-property: visibility, opacity;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -703,9 +686,7 @@ img {
   height: 24px;
   border-radius: 50%;
   cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
@@ -714,9 +695,7 @@ img {
 }
 
 .modal-close-icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover .modal-close-icon,
